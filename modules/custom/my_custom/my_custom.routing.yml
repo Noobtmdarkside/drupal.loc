@@ -1,0 +1,7 @@
+my_custom.get_data:
+  path: '/display'
+  defaults:
+    _controller: '\Drupal\my_custom\Controller\Display::my_custom'
+    _title: 'Select from DB'
+  requirements:
+    _permission: 'access content' 

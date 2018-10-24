@@ -1,0 +1,26 @@
+<h1 style="color: #00BFFF;">Time</h1>
+<div style="color: #00BFFF;
+            border-radius: 10px 10px">
+  <p>Current time: {{ curr_data }}<br>
+     Your time: {{ user_data }}<br>
+     Your name: {{ user_name }}</p><br>
+</div>
+<div style="background-color: #6495ED; 
+            color: white;">
+  <table>
+    <thead>
+        <tr>
+          <td><b> {{onlinenameheader}} </b></td>
+          <td><b> {{onlinetimeheader}} </b></td>
+        </tr>
+    </thead>
+    <tbody>
+      {% for row in rows %}
+        <tr>
+          <td> {{ row.onlinename }} </td>
+          <td> {{ row.onlinetime }} </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,13 @@
+name: Menu Multilingual
+description: Filter menu links by current language.
+type: module
+# core: 8.x
+dependencies:
+  - drupal:menu_link_content
+  - drupal:content_translation
+
+# Information added by Drupal.org packaging script on 2018-02-13
+version: '8.x-1.0-alpha1'
+core: '8.x'
+project: 'menu_multilingual'
+datestamp: 1518565983

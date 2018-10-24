@@ -1,0 +1,4 @@
+name: MySlider
+description: Adds slider of all nodes on the front page
+type: module
+core: 8.x

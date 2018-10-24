@@ -1,0 +1,14 @@
+diff --git a/src/Logger/LogEntry.php b/src/Logger/LogEntry.php
+index 0725da5..1ebd420 100644
+--- a/src/Logger/LogEntry.php
++++ b/src/Logger/LogEntry.php
+@@ -112,7 +112,7 @@ class LogEntry {
+    */
+   public function log($message, $variables = array(), $level = RfcLogLevel::NOTICE) {
+ 
+-    if ($variables !== NULL) {
++    if ($variables !== NULL && gettype($message) === 'string') {
+       $message = t($message, $variables);
+     }
+ 
+

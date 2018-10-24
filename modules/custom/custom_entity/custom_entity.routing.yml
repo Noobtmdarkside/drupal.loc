@@ -1,0 +1,7 @@
+custom_entity.custom_entity:
+  path: '/personent'
+  defaults:
+    _form:  '\Drupal\custom_entity\Form\CustomEntity'
+    _title: 'Creating custom entity'
+  requirements:
+    _permission: 'access content'

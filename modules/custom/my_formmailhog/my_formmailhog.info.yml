@@ -1,0 +1,5 @@
+name: 'LETTER'
+description: 'Form for sending LETTER'
+core: 8.x
+package: Custom
+type: module

@@ -1,0 +1,4 @@
+name: 'Custom entity'
+description: 'Module for creating custom entity PERSON'
+core: 8.x
+type: module

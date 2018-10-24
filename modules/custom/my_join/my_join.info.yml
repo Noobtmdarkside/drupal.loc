@@ -1,0 +1,5 @@
+name: Join custom module
+description: Join tables with data from DB.
+core: 8.x
+package: Custom
+type: module

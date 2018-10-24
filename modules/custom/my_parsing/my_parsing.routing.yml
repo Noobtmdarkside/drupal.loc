@@ -1,0 +1,8 @@
+my_parsing.content:
+  path: '/parsing/{id}'
+  defaults:
+    _controller: '\Drupal\my_parsing\Controller\MyParsing::content'
+    _title: 'Extracting data from site by ID(jsonplaceholder)'
+    id: '1'
+  requirements:
+    _permission: 'access content' 

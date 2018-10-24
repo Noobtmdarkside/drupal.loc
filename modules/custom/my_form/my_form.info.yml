@@ -1,0 +1,4 @@
+name: 'Creating nodes'
+description: 'Form for creating nodes'
+core: 8.x
+type: module

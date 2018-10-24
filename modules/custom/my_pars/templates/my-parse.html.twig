@@ -1,0 +1,27 @@
+
+<div style="background-color: #4169E1; 
+            color: #F5DEB3; 
+            border-radius: 10px 10px;">
+  <table>
+    <thead>
+        <tr>
+          <td><b> User ID </b></td>
+          <td><b> Art ID </b></td>
+          <td><b> Title </b></td>
+          <td><b> Body </b></td>
+          <td><b> Link </b></td>
+        </tr>
+    </thead>
+    <tbody>
+      {% for row in rows %}
+        <tr>
+          <td> {{ row.userId }} </td>
+          <td> {{ row.id }} </td>
+          <td> {{ row.title }} </td>
+          <td> {{ row.body }} </td>
+          <td><a style="color: white;" href="parsed/{{ row.id }}">{{ row.id }}</a></td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,7 @@
+my_formmailhog.my_formmailhog:
+  path: '/mailtest'
+  defaults:
+    _form:  '\Drupal\my_formmailhog\Form\MyForm'
+    _title: 'Sending LETTER'
+  requirements:
+    _permission: 'access content'

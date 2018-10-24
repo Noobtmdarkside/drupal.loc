@@ -1,0 +1,7 @@
+name: 'My custom block'
+description: 'Custom block with time'
+core: 8.x
+package: Custom
+dependencies:
+  -block
+type: module

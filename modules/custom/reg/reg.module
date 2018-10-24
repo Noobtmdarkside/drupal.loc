@@ -1,0 +1,32 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function reg_theme() {
+
+  return [
+    'reg' => [
+      'variables' => [
+        'form_login' => NULL,
+        'form_registration' => NULL,
+      ],
+    ],
+  ];
+}
+
+/**
+ * @param $variables
+ * Implements hook_preprocess_page()
+ */
+function reg_preprocess_page(&$variables){
+
+  $variables['#attached']['library'][] =  'reg/reg';
+
+  # Add libraries for anonymous
+  $logged_in = \Drupal::currentUser()->isAuthenticated();
+  if(!$logged_in){
+    $libraries['#attached']['library'][] = 'core/drupal.dialog.ajax';
+  }
+  render($libraries);
+}

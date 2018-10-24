@@ -1,0 +1,6 @@
+clock:
+  css:
+    theme:
+      css/clock.css: {}
+  js:
+    js/clock.js: {}

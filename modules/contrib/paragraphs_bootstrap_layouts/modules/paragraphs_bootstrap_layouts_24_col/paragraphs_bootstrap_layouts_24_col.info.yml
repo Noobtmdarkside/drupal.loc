@@ -1,0 +1,15 @@
+name: Paragraphs Bootstrap layouts (24 Column Grid)
+type: module
+description: A bootstrap based layout system for paragraphs using the 24 column grid
+# core: 8.x
+
+dependencies:
+  - paragraphs
+  - classy_paragraphs
+  - paragraphs_bootstrap_layouts
+
+# Information added by Drupal.org packaging script on 2017-09-01
+version: '8.x-1.0-alpha1'
+core: '8.x'
+project: 'paragraphs_bootstrap_layouts'
+datestamp: 1504272246

@@ -1,0 +1,55 @@
+
+{{ form.form_build_id }}
+{{ form.form_token }}
+{{ form.form_id }}
+{{ form.subject }}
+{{ form.message }}
+<div>
+  <p>name</p>
+  {{ form.field_first_name }}
+  <p>lname</p>
+    {{ form.field_last_name }}
+</div>
+{#<div class="container">#}
+  {#<div id="example-basic">#}
+    {#<h3>Name</h3>#}
+    {#<section>#}
+      {#<div class="reg_usname_form">{{ form.account.name }} </div>#}
+      {#<br>#}
+      {#<div class="reg_first form">{{ form.firstname }} </div>#}
+      {#<br>#}
+      {#<div class="reg_last form">{{ form.lastname }} </div>#}
+      {#<br>#}
+      {#<div class="reg_last form">{{ form.field_solo }} </div>#}
+      {#<br>#}
+    {#</section>#}
+
+    {#<h3>Password</h3>#}
+    {#<section>#}
+      {#<div class="reg_pass form">{{ form.account.password }} </div>#}
+      {#<br>#}
+      {#<div class="reg_pass form">{{ form.password }} </div>#}
+      {#<br>#}
+      {#<div class="reg_conf form">{{ form.confirm }} </div>#}
+    {#</section>#}
+
+    {#<h3>Birth Date</h3>#}
+    {#<section>#}
+      {#<div class="reg_date form">{{ form.brdate }} </div>#}
+    {#</section>#}
+
+    {#<h3>Mail</h3>#}
+    {#<section>#}
+      {#<div>{{ form.account.mail }}</div>#}
+      {#<br>#}
+      {#<div class="reg_submit form">{{ form.actions.submit }} </div>#}
+    {#</section>#}
+  {#</div>#}
+
+  {#<div>#}
+    {#<hr>#}
+      {#<div> {{ form.field_first_name }} </div>#}
+    {#<hr>#}
+  {#</div>#}
+{#</div>#}
+{#{{ kint(form.field_first_name) }}#}

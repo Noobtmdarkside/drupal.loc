@@ -1,0 +1,16 @@
+my_pars.my_parse:
+  path: '/pars'
+  defaults:
+    _controller: '\Drupal\my_pars\Controller\MyPars::my_parse'
+    _title: 'Parsing data from site (jsonplaceholder)'
+  requirements:
+    _permission: 'access content' 
+
+my_pars.content:
+  path: '/parsed/{id}'
+  defaults:
+    _controller: '\Drupal\my_pars\Controller\MyParsId::content'
+    _title: 'Extracting data from site by ID(jsonplaceholder)'
+    id: '0'
+  requirements:
+    _permission: 'access content' 

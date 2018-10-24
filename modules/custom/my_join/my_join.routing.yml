@@ -1,0 +1,7 @@
+my_custom.get_data:
+  path: '/join'
+  defaults:
+    _controller: '\Drupal\my_join\Controller\Join::my_join'
+    _title: 'Join tables with data from DB'
+  requirements:
+    _permission: 'access content' 

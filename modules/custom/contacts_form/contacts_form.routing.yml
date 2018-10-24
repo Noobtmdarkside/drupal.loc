@@ -1,0 +1,7 @@
+contacts_form.contacts_form:
+  path: '/contacstss'
+  defaults:
+    _form:  '\Drupal\contacts_form\Form\ContactsUs'
+    _title: 'Контакти'
+  requirements:
+    _permission: 'access content'

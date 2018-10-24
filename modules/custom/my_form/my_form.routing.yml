@@ -1,0 +1,7 @@
+my_form.my_form:
+  path: '/my_form'
+  defaults:
+    _form:  '\Drupal\my_form\Form\MyForm'
+    _title: 'Creating node'
+  requirements:
+    _permission: 'access content'

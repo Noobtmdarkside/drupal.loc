@@ -1,0 +1,166 @@
+/**
+ * Place your custom styles here.
+ */
+h1{
+	color: red;
+
+}
+.addtonodes{
+	font-family: 'Playfair Display SC', serif;	
+	font-weight: bold;
+	font-size: 50px;
+	color: #0000CD;
+	text-align: center;
+	text-shadow: 0 0 5px #F5FFFA, 
+             -1px -1px 0 hsl(80, 70%, 35%),
+             -2px -2px 1px hsl(80, 70%, 35%),
+             -2px -2px 2px hsl(80, 10%, 15%);
+}
+.addtonodes_text{
+	font-weight: bold;
+	font-size: 20px;
+	color: #FFDAB9;
+	text-align: center;
+}
+.addlinktonodes {
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 20px;
+	color: red;
+	text-align: center;
+}
+.time {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  color: blue;
+  text-align: center;
+}
+.addlinktonodes a:hover {
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 20px;
+	color: red;
+	text-align: center;
+}
+.addlinktonodes a {
+    color: #FFDAB9;
+}
+div.asdasdasd div.row {
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 5px;
+}
+.asdasdasd{
+	background-color: grey;
+}
+.col-md-1 {
+	border: 2px solid green;
+	background-color: lightslategray;
+}
+.col-md-4 {
+	border: 2px solid red;
+	background-color: lightslategray;
+}
+.col-md-6 {
+	border: 2px solid yellow;
+	background-color: lightslategray;
+}
+.col-md-8 {
+	border: 2px solid blue;
+	background-color: lightslategray;
+}
+.col-xs-12 {
+	border: 2px solid red;
+	background-color: lightslategray;
+}
+.col-xs-6 {
+	border: 2px solid blue;
+	background-color: lightslategray;
+}
+.col-sm-4 {
+	border: 2px solid yellow;
+	background-color: lightslategray;
+}
+/* CUSTOM view ENTITY*/
+/* styles for custom person entity view*/
+.views-col.col-1 {
+	border: 3px solid #139ff7;
+	border-radius: 5px 5px;
+	text-align: center;
+}
+.views-col.col-2 {
+	border: 3px solid #139ff7;
+	border-radius: 5px 5px;
+	text-align: center;
+}
+.views-col.col-3 {
+	border: 3px solid #139ff7;
+	border-radius: 5px 5px;
+	text-align: center;
+}
+.views-col.col-4 {
+	border: 3px solid #139ff7;
+	border-radius: 5px 5px;
+	text-align: center;
+}
+.views-col.col-5 {
+	border: 3px solid #139ff7;
+	border-radius: 5px 5px;
+	text-align: center;
+}
+.cols-5.clearfix div.views-row.clearfix.row-1 div.views-col.col-1 {
+	width: 50% !important;
+}
+.cols-5.clearfix div.views-row.clearfix.row-1 div.views-col.col-2 {
+	width: 50% !important;
+}
+.cols-5.clearfix div.views-row.clearfix.row-1 div.views-col.col-3 {
+	width: 100% !important;
+}
+.cols-5.clearfix div.views-row.clearfix.row-1 div.views-col.col-4 {
+	width: 50% !important;
+}
+.cols-5.clearfix div.views-row.clearfix.row-1 div.views-col.col-5 {
+	width: 50% !important;
+	margin-bottom: 20px;
+}
+.col-1 div.views-field.views-field-persimage__target-id{
+	display: none;
+}
+.col-2 div.views-field.views-field-persimage__target-id{
+	display: none;
+}
+.cols-5.clearfix div.views-row.clearfix.row-1 div.views-col.col-3 div.views-field.views-field-persimage__target-id span.field-content img.img-responsive {
+	display: inline !important;
+}
+.col-4 div.views-field.views-field-persimage__target-id{
+	display: none;
+}
+.col-5 div.views-field.views-field-persimage__target-id{
+	display: none;
+}
+
+/* night morning day evening*/
+section.main.page-morning {
+  background-image: url("/sites/default/files/1_morning.jpg");
+  background-size: 100%;
+}
+section.main.page-day {
+  background-image: url("/sites/default/files/2_day.jpg");
+  background-size: 100%;
+}
+section.main.page-evening {
+  background-image: url("/sites/default/files/3_evening.jpg");
+  background-size: 100%;
+}
+section.main.page-night {
+	background-image: url("/sites/default/files/4_night.jpg");
+  background-size: 100%;
+}
+/*
+night   https://look.com.ua/pic/201504/1920x1080/look.com.ua-118436.jpg
+morning https://wallpapers-fenix.eu/full/141205/101616152.jpg
+day     http://kinoman.me/uploads/images/2018/78/yyhv301.jpg
+evening https://i.ytimg.com/vi/6C8jfY3jt0s/maxresdefault.jpg
+ */

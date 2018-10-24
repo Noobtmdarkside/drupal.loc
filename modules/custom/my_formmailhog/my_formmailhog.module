@@ -1,0 +1,51 @@
+<?php
+
+use Drupal\Component\Utility\Html;
+
+/**
+ * @param $key
+ * @param $message
+ * @param $params
+ * Implements hook_mail()
+ */
+  /**
+   * Implements hook_theme().
+   */
+function my_formmailhog_theme() {
+  return [
+    'my_formmailhog' => [
+      'variables' => [
+        'body' => NULL,
+        'name' => NULL,
+        'country' => NULL,
+        'sended_image' => NULL,
+      ],
+    ],
+      'my_form' => [
+          'variables' => [
+             'ssname' => NULL,
+          ]
+       ]
+  ];
+}
+function my_formmailhog_mail($key, &$message, $params)
+{
+  switch ($key) {
+    case 'send_mail':
+      $message['from'] = \Drupal::config('system.site')->get('mail');
+      $message['headers']['Content-Type'] = 'text/html; charset=UTF-8; format=flowed; delsp=yes';
+      $message['subject'] = $params['title'];
+
+      $theme_body = [
+        '#theme' => 'my_formmailhog',
+        '#body' => $params['body']['body'],
+        '#name' => $params['body']['name'],
+        '#country' => $params['body']['country'],
+        '#sended_image' => $params['body']['sended_image'],
+      ];
+
+      $mail_body = \Drupal::service('renderer')->render($theme_body);
+      $message['body'][] = Html::escape($mail_body);
+      break;
+  }
+}

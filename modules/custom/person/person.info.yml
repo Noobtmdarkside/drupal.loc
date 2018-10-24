@@ -1,0 +1,6 @@
+name: Personaa
+description: create a custom entity.
+package: Custom
+type: module
+# core: 8.x
+core: 8.x

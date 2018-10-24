@@ -1,0 +1,38 @@
+
+<style>
+  th, td {
+    border-radius: 10px 10px;
+    border: 1px solid orange;
+    padding: 10px;
+    text-align: left;
+  }
+</style>
+<div style="background-color: #FAEBD7;
+            color: #4169E1; 
+            border-radius: 10px 10px;
+            border: 1px solid orange">
+  <table>
+    <thead>
+        <tr>
+          <td><b> User ID </b></td>
+          <td><b> Art ID </b></td>
+          <td><b> Title </b></td>
+          <td><b> Body </b></td>
+          <td><b> HREFed link </b></td>
+          <td><b> URLfromRoute </b></td>
+        </tr>
+    </thead>
+    <tbody>
+      {% for row in rows %}
+        <tr>
+          <td> {{ row.userId }} </td>
+          <td> {{ row.id }} </td>
+          <td> {{ row.title }} </td>
+          <td> {{ row.body }} </td>
+          <td><a style="color: #4169E1;" href="parsing/{{ row.id }}">{{ row.id }}</a></td>
+          <td> {{ row.link }} </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,15 @@
+slick:
+  version: 1.8.1
+  css:
+    theme:
+      css/slick.css: {}
+      css/slick-theme.css: {}
+  js:
+    js/slick.min.js: {}
+    js/slick.js: {}
+    js/slick-custom-script.js: {}
+    js/scripts.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal

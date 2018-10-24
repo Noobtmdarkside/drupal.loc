@@ -1,0 +1,70 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function my_block_theme($existing, $type, $theme, $path) {
+  return [ 
+    'my_block' => [
+      'variables' => [
+      	'curr_data' => NULL,
+      	'user_data' => NULL,
+      	'user_name' => NULL,
+	      'header' => NULL,
+	      'rows' => NULL,
+        'onlinenameheader' => NULL,
+        'onlinetimeheader' => NULL,
+      ]
+    ] 
+  ];
+}
+/**
+ * Implements hook_form_alter().
+ */
+function my_block_form_alter(&$form, &$form_state, $form_id) {
+  if ($form_id == 'contact_message_feedback_form') {
+    $form['#validate'][] = 'my_block_form_validate';
+    $form['#submit'][] = 'my_block_submit_function';
+    // Add a checkbox to contact form for terms.
+    $form['terms'] = array(
+      '#type' => 'checkbox',
+      '#title' => t("I accept the website's terms."),
+      '#required' => TRUE,
+      '#weight' => -10,
+    );
+    // Add a select list to contact form.
+    $form['city'] = array(
+      '#title' => t('City'),
+      '#type' => 'select',
+      '#description' => 'Select the city where are you from.',
+      '#options' => array('Lviv' => 'Lviv',
+                         'Lutsk' => 'Lutsk',
+                          'Lipiny' => 'Lipiny',
+                          'Kharkiv' => 'Kharkiv',
+                          'Chervonograd' => 'Chervonograd'
+                          ),
+      '#weight' => -11,
+      '#empty_option' => '--Select--',
+    );
+    $form['actions']['submit']['#value'] = 'Submit btn';
+  }
+}
+
+function my_block_form_validate($form, &$form_state) {
+  $city = $form_state->getValue('city');
+    
+    // kint($form['subject']);
+    // die();
+
+  if ($city == 'Lutsk') {
+    $form_state->setErrorByName('city', t('Your city is incorrect!'));
+  }
+  else{
+    drupal_set_message(t(' Your message: </br>______name: '.$form['name']['#value']
+                                       .'</br>______mail: '.$form['mail']['#value']
+                                       .'</br>______city: '.$form['city']['#value']
+                                       .'</br>______term: '.$form['terms']['#checked']
+                                       .'</br>______subject: '.$form['subject']['widget']['0']['value']['#value'] 
+                                       .'</br>______message: '.$form['message']['widget']['0']['value']['#value'] ));
+  }
+}

@@ -1,0 +1,4 @@
+name: Slider
+description: Adds slider to Views pager
+type: module
+core: 8.x

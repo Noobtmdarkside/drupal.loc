@@ -1,0 +1,177 @@
+// Default variables.
+@import "default-variables";
+
+// Bootstrap Framework.
+@import '../bootstrap/assets/stylesheets/bootstrap';
+
+// Base-theme overrides.
+@import 'overrides';
+
+/**
+ * Place your custom styles here.
+ */
+body {
+  background: lightyellow;
+}
+
+h1{
+  color: green;
+  font-family: Tahoma sans-serif;
+}
+.addtonodes{
+  font-family: 'Playfair Display SC', serif;
+  font-weight: bold;
+  font-size: 50px;
+  color: #0000CD;
+  text-align: center;
+  text-shadow: 0 0 5px #F5FFFA,
+  -1px -1px 0 hsl(80, 70%, 35%),
+  -2px -2px 1px hsl(80, 70%, 35%),
+  -2px -2px 2px hsl(80, 10%, 15%);
+}
+.addtonodes_text{
+  font-weight: bold;
+  font-size: 20px;
+  color: #FFDAB9;
+  text-align: center;
+}
+.addlinktonodes {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  color: red;
+  text-align: center;
+}
+.addlinktonodes a:hover {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  color: red;
+  text-align: center;
+}
+.addlinktonodes a {
+  color: #FFDAB9;
+}
+div.asdasdasd div.row {
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 5px;
+}
+.asdasdasd{
+  background-color: red;
+}
+.col-md-1 {
+  border: 3px solid green;
+  background-color: lightslategray;
+  border-radius: 5px 5px;
+}
+.col-md-4 {
+  border: 3px solid red;
+  background-color: lightslategray;
+  border-radius: 5px 5px;
+}
+.col-md-6 {
+  border: 3px solid yellow;
+  background-color: lightslategray;
+  border-radius: 5px 5px;
+}
+.col-md-8 {
+  border: 3px solid blue;
+  background-color: lightslategray;
+  border-radius: 5px 5px;
+}
+.col-md-12 {
+  border: 3px solid blue;
+  background-color: lightslategray;
+  border-radius: 5px 5px;
+}
+.col-xs-12 {
+  border: 3px solid red;
+  background-color: lightslategray;
+  border-radius: 5px 5px;
+}
+.col-xs-6 {
+  border: 3px solid blue;
+  background-color: lightslategray;
+  border-radius: 5px 5px;
+}
+.col-sm-4 {
+  border: 3px solid yellow;
+  background-color: lightslategray;
+  border-radius: 5px 5px;
+}
+html.no-touchevents.details.js body.toolbar-tray-open.toolbar-horizontal.toolbar-fixed.user-logged-in.path-content-entity-example-contact.has-glyphicons div.main-container.container.js-quickedit-main-content div.row section.col-sm-9 div.region.region-content div.layout.layout--onecol div.layout__region.layout__region--content div.field.field--name-name.field--type-string.field--label-above div.field--item {
+  font-size: 30px;
+  color: red;
+  margin-bottom: 30px;
+}
+
+/* CUSTOM view ENTITY*/
+.views-col.col-1 {
+  border: 3px solid #139ff7;
+  border-radius: 5px 5px;
+  text-align: center;
+}
+.views-col.col-2 {
+  border: 3px solid #139ff7;
+  border-radius: 5px 5px;
+  text-align: center;
+}
+.views-col.col-3 {
+  border: 3px solid #139ff7;
+  border-radius: 5px 5px;
+  text-align: center;
+}
+.views-col.col-4 {
+  border: 3px solid #139ff7;
+  border-radius: 5px 5px;
+  text-align: center;
+}
+.views-col.col-5 {
+  border: 3px solid #139ff7;
+  border-radius: 5px 5px;
+  text-align: center;
+}
+.cols-5.clearfix div.views-row.clearfix.row-1 div.views-col.col-1 {
+  width: 50% !important;
+}
+.cols-5.clearfix div.views-row.clearfix.row-1 div.views-col.col-2 {
+  width: 50% !important;
+}
+.cols-5.clearfix div.views-row.clearfix.row-1 div.views-col.col-3 {
+  width: 100% !important;
+}
+.cols-5.clearfix div.views-row.clearfix.row-1 div.views-col.col-4 {
+  width: 50% !important;
+}
+.cols-5.clearfix div.views-row.clearfix.row-1 div.views-col.col-5 {
+  width: 50% !important;
+  margin-bottom: 20px;
+}
+.col-1 div.views-field.views-field-persimage__target-id{
+  display: none;
+}
+.col-2 div.views-field.views-field-persimage__target-id{
+  display: none;
+}
+.cols-5.clearfix div.views-row.clearfix.row-1 div.views-col.col-3 div.views-field.views-field-persimage__target-id span.field-content img.img-responsive {
+  display: inline !important;
+}
+.col-4 div.views-field.views-field-persimage__target-id{
+  display: none;
+}
+.col-5 div.views-field.views-field-persimage__target-id{
+  display: none;
+}
+
+/* LOGIN / REGIST styles*/
+.login-user{
+  float: right;
+}
+.name {
+  float: right;
+}
+.logout{
+  float: right;
+  margin-right: 20px;
+}

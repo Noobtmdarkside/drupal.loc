@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function my_pars_theme($existing, $type, $theme, $path) {
+  return [ 
+    'my_parse' => [
+      'variables' => [
+      	'header' => NULL,
+	      'rows' => NULL,
+      ]
+    ] 
+  ];
+}

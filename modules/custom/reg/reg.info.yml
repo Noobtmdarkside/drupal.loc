@@ -1,0 +1,5 @@
+name: 'reg for users'
+description: 'reg or login for anonimuses'
+core: 8.x
+package: Custom
+type: module

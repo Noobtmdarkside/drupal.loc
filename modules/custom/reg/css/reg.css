@@ -1,0 +1,149 @@
+.form-login, .form-registration  {
+    width: 397px;
+    height: 600px;
+    position: absolute;
+    left: 0;
+    top: 90px;
+    background-color: white;
+}
+.form-login {
+    z-index: 1;
+}
+.activate {
+    z-index: 2;
+    background-color: white;
+}
+.form-login div.form-item-name, .form-login div.form-item-pass{
+    margin-top: 5px;
+}
+.form-registration input {
+    background-color: white;
+}
+.form-registration .form-submit {
+    background-color: white;
+    color: black;
+    position: relative;
+    top: 120px;
+}
+
+.whitetop {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    box-shadow: none;
+    background: white;
+    border-radius: 10px 10px;
+}
+.form-submit {
+    position: relative;
+    top: 160px;
+    width: 160px;
+    height: 30px;
+    border: none;
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+.login {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    height: 40px;
+    width: 50%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
+    cursor: pointer;
+    background-color: white;
+}
+.register {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    height: 40px;
+    width: 50%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
+    cursor: pointer;
+    background-color: white;
+}
+
+/* styles for block*/
+.login-user {
+    float: right;
+}
+.logged_name {
+    float: right;
+}
+.logout {
+    float: right;
+    margin-right: 20px;
+}
+.off_reg_on_reg_form {
+    display: none;
+}
+/* styles for modal header*/
+#drupal-modal--header.modal-header.ui-draggable-handle h4.modal-title {
+    color: white;
+}
+/* styles for modal login form */
+.login {
+    color: black !important;
+    font-weight: bold;
+    background-color: white !important;
+}
+
+/* styles for modal reg form */
+.register {
+    color: black !important;
+    font-weight: bold;
+    background-color: white !important;
+}
+
+/* styles for button and text login */
+.button.js-form-submit.form-submit.btn-primary.btn.icon-before {
+    margin-top: -250px;
+    margin-left: 100px;
+}
+.button.js-form-submit.form-submit.btn-default.btn {
+    margin-top: -200px;
+    margin-left: 100px;
+}
+.activate div.form-item.js-form-item.form-type-textfield.js-form-type-textfield.form-item-name.js-form-item-name.form-group {
+    margin-top: 10px;
+}
+.form-email.required.form-control {
+    width: 80% !important;
+    margin-left: 10px;
+}
+.form-registration div.form-item.js-form-item.form-type-textfield.js-form-type-textfield.form-item-name.js-form-item-name.form-group label.control-label.js-form-required.form-required {
+    margin-top: 5px;
+}
+.form-text.required.form-control {
+    width: 80% !important;
+    margin-left: 10px;
+}
+.control-label.js-form-required.form-required{
+    margin-left: 30px;
+    color: black;
+}
+.form-login div.form-item.js-form-item.form-type-textfield.js-form-type-textfield.form-item-name.js-form-item-name.form-group label.control-label.js-form-required.form-required {
+    color: black;
+}
+.form-login div.form-item.js-form-item.form-type-password.js-form-type-password.form-item-pass.js-form-item-pass.form-group label.control-label.js-form-required.form-required {
+    color: black;
+}
+#drupal-modal--header.modal-header.ui-draggable-handle h4.modal-title {
+    font-weight: bold;
+}
+.form-registration.activate div.form-item.js-form-item.form-type-textfield.js-form-type-textfield.form-item-name.js-form-item-name.form-group input {
+    color: black;
+}
+/* styles for Sign up button*/
+.button.js-form-submit.form-submit.btn-default.btn{
+    color: white;
+}

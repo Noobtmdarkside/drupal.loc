@@ -1,0 +1,20 @@
+global-styling:
+  css:
+    theme:
+      css/style.css: {}
+      css/jquery.steps.css: {}
+      css/main.css: {}
+      css/normalize.css: {}
+
+global-js:
+  js:
+    js/custom.js: {}
+    js/jquery.steps.js: {}
+    js/jquery.steps.min.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal.ajax
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery.once
+    - core/drupal.dialog.ajax

@@ -1,0 +1,23 @@
+reg.login:
+  path: '/sign-in'
+  defaults:
+    _form: '\Drupal\reg\Form\LogForma'
+    _title: 'Login'
+  requirements:
+    _access: 'TRUE'
+
+reg.form:
+  path: '/registration'
+  defaults:
+    _form: '\Drupal\reg\Form\RegForma'
+    _title: 'Regist'
+  requirements:
+    _access: 'TRUE'
+
+reg.menu:
+  path: '/choose-menu'
+  defaults:
+    _controller: '\Drupal\reg\Controller\Regmenuforanon::Menu'
+    _title: 'Menu'
+  requirements:
+    _access: 'TRUE'
